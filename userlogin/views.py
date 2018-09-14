@@ -29,3 +29,7 @@ def post_sign_in(request):
         return render(request, "userlogin/signIn.html", {'msg': message})
 
     return render(request, "userlogin/welcome.html", {'e': email})
+
+
+def sign_up(request):
+    return render(request, "userlogin/signUp.html", request.GET)
