@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3fb373-a537-4224-ad47-aa429722b4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/logo_v1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/jquery.seat-charts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/css/welcomepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/Delhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/Hyderabad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/Mumbai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/bangalore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/first_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/second_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/images/third_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/jquery.nicescroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/jquery.seat-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/jquery.seat-charts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userlogin/templates/userlogin/bookseats.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userlogin/static/userlogin/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userlogin/templates/userlogin/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/userlogin/templates/userlogin/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userlogin/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/userlogin/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userlogin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userlogin/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userlogin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userlogin/views.py" afterDir="false" />
     </list>
@@ -16,6 +36,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -26,47 +60,50 @@
         <counts>
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.65" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.86" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="7" />
-          <entry key="html" value="6" />
+          <entry key="css" value="15" />
+          <entry key="html" value="16" />
           <entry key="ico" value="1" />
-          <entry key="js" value="6" />
+          <entry key="js" value="9" />
           <entry key="png" value="2" />
-          <entry key="py" value="12" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
-          <entry key="HTML" value="6" />
+          <entry key="CSS" value="15" />
+          <entry key="HTML" value="16" />
           <entry key="Image" value="3" />
-          <entry key="JavaScript" value="6" />
-          <entry key="Python" value="12" />
+          <entry key="JavaScript" value="9" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1157" />
-          <entry key="html" value="1275" />
-          <entry key="js" value="5" />
-          <entry key="py" value="748" />
+          <entry key="css" value="3890" />
+          <entry key="html" value="3517" />
+          <entry key="js" value="7" />
+          <entry key="py" value="1683" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1157" />
+          <entry key="CSS" value="3890" />
           <entry key="DjangoUrlPath" value="1" />
-          <entry key="HTML" value="1275" />
-          <entry key="JavaScript" value="5" />
-          <entry key="Python" value="747" />
+          <entry key="HTML" value="3517" />
+          <entry key="JavaScript" value="7" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Python" value="1682" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -78,39 +115,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userlogin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="1020">
+              <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
-                <marker date="1536933893179" expanded="true" signature="977:982" ph="..." />
+                <marker date="1537039051730" expanded="true" signature="1135:1140" ph="..." />
+                <marker date="1537039051730" expanded="true" signature="1229:1776" ph="..." />
+                <marker date="1537039051730" expanded="true" signature="1903:1959" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signIn.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="85" column="61" lean-forward="true" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -118,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userlogin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -127,11 +138,67 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/main.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/bookseats.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="278" column="1" lean-forward="true" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
+            <state relative-caret-position="-366">
+              <caret line="25" column="82" lean-forward="true" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/jquery.seat-charts.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-876" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-595">
+              <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signIn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/welcomepage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1624">
+              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -143,6 +210,8 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -152,6 +221,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Amitosh Kumar &lt;k.amitosh@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -161,15 +235,22 @@
         <option value="$PROJECT_DIR$/MovieTicketBookingSystem/urls.py" />
         <option value="$PROJECT_DIR$/templates/signIn/signIn.html" />
         <option value="$PROJECT_DIR$/MovieTicketBookingSystem/settings.py" />
-        <option value="$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html" />
         <option value="$PROJECT_DIR$/userlogin/static/userlogin/js/main.js" />
-        <option value="$PROJECT_DIR$/userlogin/static/userlogin/css/style.css" />
         <option value="$PROJECT_DIR$/userlogin/templates/userlogin/register.html" />
-        <option value="$PROJECT_DIR$/userlogin/static/userlogin/css/main.css" />
-        <option value="$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html" />
-        <option value="$PROJECT_DIR$/userlogin/urls.py" />
-        <option value="$PROJECT_DIR$/userlogin/views.py" />
         <option value="$PROJECT_DIR$/userlogin/templates/userlogin/signIn.html" />
+        <option value="$PROJECT_DIR$/moviehome/urls.py" />
+        <option value="$PROJECT_DIR$/LightsCameraPopcorn/views.py" />
+        <option value="$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html" />
+        <option value="$PROJECT_DIR$/userlogin/static/userlogin/css/main.css" />
+        <option value="$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html" />
+        <option value="$PROJECT_DIR$/userlogin/static/userlogin/css/welcomepage.css" />
+        <option value="$PROJECT_DIR$/userlogin/static/userlogin/css/style.css" />
+        <option value="$PROJECT_DIR$/userlogin/templates/userlogin/bookseat.html" />
+        <option value="$PROJECT_DIR$/userlogin/static/userlogin/js/jquery-1.11.0.min.js" />
+        <option value="$PROJECT_DIR$/userlogin/views.py" />
+        <option value="$PROJECT_DIR$/userlogin/urls.py" />
+        <option value="$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/style.css" />
+        <option value="$PROJECT_DIR$/userlogin/templates/userlogin/bookseats.html" />
       </list>
     </option>
   </component>
@@ -179,7 +260,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="36" />
     <option name="width" value="1346" />
@@ -191,13 +272,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="MovieTicketBookingSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovieTicketBookingSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieTicketBookingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieTicketBookingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="moviehome" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovieTicketBookingSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -231,6 +316,15 @@
               <item name="userlogin" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="userlogin" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bookseats_css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieTicketBookingSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieTicketBookingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="userlogin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="userlogin" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,7 +333,8 @@
               <item name="userlogin" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="userlogin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bookseats_js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovieTicketBookingSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -258,28 +353,30 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin\images" />
+      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin\js" />
+      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin\css" />
+      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\templates\userlogin" />
+      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\templates\userlogin" />
       <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin" />
       <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin" />
-      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin\images" />
-      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\templates\userlogin" />
-      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin\css" />
-      <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\userlogin\static\userlogin\js" />
       <recent name="C:\Users\Amitosh Kumar\PycharmProjects\MovieTicketBookingSystem\templates" />
     </key>
   </component>
@@ -332,18 +429,26 @@
       <option name="presentableId" value="Default" />
       <updated>1536124631514</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sign Up UI added">
+      <created>1536936652680</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536936652736</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="36" width="1346" height="694" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2682737" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3625" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36129034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,8 +464,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="R Packages" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2643857" />
@@ -394,6 +499,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sign Up UI added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign Up UI added" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/userlogin/models.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -406,23 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovieTicketBookingSystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#648#680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -430,79 +522,146 @@
     <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/images/icons/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/util.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/vendor/tilt/tilt.jquery.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/images/logo_v1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html">
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moviehome/urls.py" />
+    <entry file="file://$PROJECT_DIR$/MovieTicketBookingSystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/util.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="154" selection-start-line="154" selection-end-line="155" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        <state relative-caret-position="297">
+          <caret line="464" column="5" lean-forward="true" selection-start-line="464" selection-start-column="5" selection-end-line="464" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/main.css">
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/js/jquery-1.11.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="278" column="1" lean-forward="true" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="31933" selection-start-line="3" selection-start-column="31933" selection-end-line="3" selection-end-column="31933" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html">
+    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/bookseat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="85" column="61" lean-forward="true" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
+        <state relative-caret-position="-1621">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/welcomepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1624">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/js/main.js">
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/js/bookseats_js/jquery.seat-charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="-7656">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="1020">
+          <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <marker date="1536933893179" expanded="true" signature="977:982" ph="..." />
+            <marker date="1537039051730" expanded="true" signature="1135:1140" ph="..." />
+            <marker date="1537039051730" expanded="true" signature="1229:1776" ph="..." />
+            <marker date="1537039051730" expanded="true" signature="1903:1959" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/jquery.seat-charts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-876" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signUp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/signIn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/static/userlogin/css/bookseats_css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userlogin/templates/userlogin/bookseats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366">
+          <caret line="25" column="82" lean-forward="true" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

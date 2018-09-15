@@ -1,0 +1,196 @@
+
+/*.limiter{*/
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+/*}
+
+/*.main-container{*/
+    /*width: 100%;*/
+    /*min-height: 100vh;*/
+    /*display: -webkit-box;*/
+    /*display: -webkit-flex;*/
+    /*display: -moz-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*padding: 15px;*/
+    /*background: #9053c7;*/
+    /*background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /*background: -o-linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /*background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+/*}*/
+
+/*.white-container{*/
+    /*width: 1300px;*/
+    /*min-height: 600px;*/
+    /*background: #fff;*/
+    /*border-radius: 20px;*/
+    /*overflow: hidden;*/
+
+    /*display: -webkit-box;*/
+    /*display: -webkit-flex;*/
+    /*display: -moz-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: inline-flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    /*padding: 20px 20px 20px 20px;*/
+/*}*/
+/*.navbar-main{*/
+    /*position: relative;*/
+    /*height: 70px;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*margin:0 10px;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*.navbar-main img{*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*border-radius: 50%;*/
+    /*padding: 2px;*/
+/*}*/
+/*.nav{*/
+    /*text-align: center;*/
+/*}*/
+/*.nav i{*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*font-size: 40px;*/
+    /*margin-left: 5px;*/
+    /*border-radius: 50%;*/
+    /*border: 1px solid #4158d0;*/
+/*}*/
+/*.nav-line{*/
+    /*width: 100%;*/
+    /*height: 10px;*/
+    /*margin: 0 auto;*/
+    /*background: #4158d0;*/
+/*}*/
+
+.main-background{
+    width: 100%;
+    min-height: 100vh;
+    background: #9053c7;
+    padding: 15px;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.white-box{
+    width: 1200px;
+    min-height: 600px;
+    background: #fff;
+    margin: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.navbar-lcp{
+    width: 100%;
+    height: 60px;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar-lcp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-menu{
+    margin: 10px auto;
+}
+.nav-menu a{
+    margin: 70px;
+    color: red;
+}
+.user-info{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.user-info i{
+    margin: 5px;
+    font-size: 34px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.navbar-bot-border{
+    width: 50%;
+    height: 2px;
+    background: red;
+    margin: auto;
+}
+#now-showing-text{
+    margin-left: 20px;
+    padding: 20px 20px 20px 0px;
+}
+#book-ticket-text{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 0px;
+}
+#carouselExampleIndicators{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.carousel-inner{
+    margin: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    max-height: 200px;
+}
+.carousel-item{
+    height: 200px;
+}
+.carousel-item img{
+    height: 200px;
+}
+.city-image{
+    margin-left: 100px;
+}
+.city-image img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid black;
+}
+#city-selection-title{
+    margin-left: 120px;
+}
+#movie-selection-text{
+    margin-left: 120px;
+}
+.movie-list{
+    margin-left: 120px;
+}
+select{
+    width: 520px;
+    border-radius: 20px;
+    color: red;
+    border-color: red;
+}
+#theatre-selection-text{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.theatre-list{
+    margin-left: 120px;
+}
+#show-timing-text{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.show-time-list{
+    margin-left: 120px;
+}
+.btn-default{
+    margin-top: 40px;
+    margin-left: 200px;
+}
