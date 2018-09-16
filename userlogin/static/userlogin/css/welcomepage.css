@@ -1,75 +1,23 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
 
-/*.limiter{*/
-    /*width: 100%;*/
-    /*margin: 0 auto;*/
-/*}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
 
-/*.main-container{*/
-    /*width: 100%;*/
-    /*min-height: 100vh;*/
-    /*display: -webkit-box;*/
-    /*display: -webkit-flex;*/
-    /*display: -moz-box;*/
-    /*display: -ms-flexbox;*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*padding: 15px;*/
-    /*background: #9053c7;*/
-    /*background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /*background: -o-linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /*background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-/*}*/
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
 
-/*.white-container{*/
-    /*width: 1300px;*/
-    /*min-height: 600px;*/
-    /*background: #fff;*/
-    /*border-radius: 20px;*/
-    /*overflow: hidden;*/
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
 
-    /*display: -webkit-box;*/
-    /*display: -webkit-flex;*/
-    /*display: -moz-box;*/
-    /*display: -ms-flexbox;*/
-    /*display: inline-flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-between;*/
-    /*padding: 20px 20px 20px 20px;*/
-/*}*/
-/*.navbar-main{*/
-    /*position: relative;*/
-    /*height: 70px;*/
-    /*width: 100%;*/
-    /*left: 0;*/
-    /*margin:0 10px;*/
-    /*border: 1px solid black;*/
-/*}*/
-/*.navbar-main img{*/
-    /*width: 60px;*/
-    /*height: 60px;*/
-    /*border-radius: 50%;*/
-    /*padding: 2px;*/
-/*}*/
-/*.nav{*/
-    /*text-align: center;*/
-/*}*/
-/*.nav i{*/
-    /*width: 50px;*/
-    /*height: 50px;*/
-    /*font-size: 40px;*/
-    /*margin-left: 5px;*/
-    /*border-radius: 50%;*/
-    /*border: 1px solid #4158d0;*/
-/*}*/
-/*.nav-line{*/
-    /*width: 100%;*/
-    /*height: 10px;*/
-    /*margin: 0 auto;*/
-    /*background: #4158d0;*/
-/*}*/
 
 .main-background{
     width: 100%;
@@ -81,9 +29,14 @@
     background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
     background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
-
+.nav-menu a:hover{
+    color: #80465E;
+}
+.nav-menu a:focus{
+    color: #80465E;
+}
 .white-box{
-    width: 1200px;
+    width: 1000px;
     min-height: 600px;
     background: #fff;
     margin: auto;
@@ -91,10 +44,28 @@
     padding-bottom: 20px;
     border-radius: 20px;
 }
+.input100:focus + .focus-input100 {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
 .navbar-lcp{
     width: 100%;
     height: 60px;
-    margin: 5px 10px;
+    margin: 5px 30px;
     padding: 5px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -105,35 +76,45 @@
     border-radius: 50%;
 }
 .nav-menu{
-    margin: 10px auto;
+    margin: auto;
 }
 .nav-menu a{
-    margin: 70px;
-    color: red;
+    font-family: Poppins-Medium;
+    font-size: 24px;
+    margin: 30px;
+    color: #031E32;
 }
 .user-info{
-    text-align: center;
-    margin-bottom: 10px;
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    text-align: start;
+    margin: 0 10px;
 }
 .user-info i{
     margin: 5px;
     font-size: 34px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid #031E32;
 }
 .navbar-bot-border{
     width: 50%;
     height: 2px;
-    background: red;
+    background: #031E32;
     margin: auto;
 }
 #now-showing-text{
-    margin-left: 20px;
+    font-family: 'Poppins-Bold';
+    color: #031E32;
+    font-size: 34px;
+    margin-left: 40px;
     padding: 20px 20px 20px 0px;
 }
 #book-ticket-text{
+    font-family: 'Poppins-Bold';
+    font-size: 34px;
+    color: #031E32;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     padding: 20px 20px 20px 0px;
 }
 #carouselExampleIndicators{
@@ -155,42 +136,113 @@
 .city-image{
     margin-left: 100px;
 }
-.city-image img{
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-    border: 1px solid black;
-}
 #city-selection-title{
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+    color: #80465E;
     margin-left: 120px;
 }
 #movie-selection-text{
+    font-family: 'Poppins-Medium';
+    font-size: 20px;
+    color: #80465E;
     margin-left: 120px;
 }
 .movie-list{
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #80465E;
     margin-left: 120px;
 }
 select{
-    width: 520px;
+    text-align-last: center;
+    width: 90%;
     border-radius: 20px;
-    color: red;
-    border-color: red;
+    color: #80465E;
+    border-color: #80465E;
 }
 #theatre-selection-text{
+    font-family: 'Poppins-Medium';
+    font-size: 20px;
+    color: #80465E;
     margin-top: 20px;
     margin-left: 120px;
 }
 .theatre-list{
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #80465E;
     margin-left: 120px;
 }
 #show-timing-text{
+    font-family: 'Poppins-Medium';
+    font-size: 20px;
+    color: #80465E;
     margin-top: 20px;
     margin-left: 120px;
 }
 .show-time-list{
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #80465E;
     margin-left: 120px;
 }
+.btn{
+    border-radius: 30%;
+}
 .btn-default{
+    width: 150px;
+    background: #031E32;
+    color: #806169;
     margin-top: 40px;
-    margin-left: 200px;
+    margin-left: 430px;
+}
+
+input[type=radio]:checked + label {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #031E32;
+}
+
+
+input[type=radio] + label>img {
+  border: 1px;
+  width: 100%;
+  height: 100%;
+  transition: 500ms all;
+}
+.city-image input{
+    visibility: hidden;
+    margin-left: 50px;
+}
+.city-image label{
+    width: 100px;
+    height: 100px;
+}
+.show-time-list input{
+    visibility: hidden;
+    margin-left: 50px;
+}
+.show-time-list label{
+    padding: 5px;
+    border: 2px solid #80465E;
+    border-radius: 30px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.user-info:hover .dropdown-content {
+    display: block;
+    margin-right: 10px;
 }

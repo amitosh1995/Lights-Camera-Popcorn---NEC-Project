@@ -16,6 +16,8 @@ fireBase = pyrebase.initialize_app(config)
 authe = fireBase.auth()
 database = fireBase.database()
 
+user_movie_data = {}
+
 
 def sign_in(request):
     return render(request, "userlogin/signIn.html")
@@ -29,10 +31,11 @@ def post_sign_in(request):
     except:
         message = "Invalid Username or password. Please try again :) !"
         return render(request, "userlogin/signIn.html", {'msg': message})
-    print(user)
+    uid = user['localId']
     session_id = user['idToken']
     request.session['uid'] = str(session_id)
-    return render(request, "userlogin/welcome.html", {'e': email})
+    user_name = database.child("Users").child(uid).child("User info").child("Name").get().val()
+    return render(request, "userlogin/welcome.html", {"user_name": user_name})
 
 
 def sign_up(request):
@@ -44,9 +47,11 @@ def post_sign_up(request):
     email = request.POST.get('email')
     contact_no = request.POST.get('telephone')
     passw = request.POST.get('pass')
-
-    user = authe.create_user_with_email_and_password(email, passw)
-
+    try:
+        user = authe.create_user_with_email_and_password(email, passw)
+    except:
+        message = "Please check your username and password.Username might be in use or password maybe too weak. Password should be atleast of 6 character long. Otherwise try unique username"
+        return render(request, "userlogin/signUp.html", request.GET, {"msg": message})
     uid = user['localId']
     data = {"Name": name, "Contact No": contact_no, "Email": email, "Password": passw}
     database.child("Users").child(uid).child("User info").set(data)
@@ -60,4 +65,31 @@ def log_out(request):
 
 
 def seat_booking(request):
-    return render(request, "userlogin/bookseats.html")
+    counter = 1
+    city = request.POST.get('cities')
+    theatre = request.POST.get('theatre')
+    movie = request.POST.get('movies')
+    shows = request.POST.get('shows')
+    user_movie_data['movie_name'] = movie
+    user_movie_data['city_name'] = city
+    user_movie_data['theatre_name'] = theatre
+    user_movie_data['show_time'] = shows
+    idToken = request.session['uid']
+    user_data = authe.get_account_info(idToken)
+    user = user_data['users']
+    user = user[0]
+    localid = user['localId']
+    booking = database.child("Users").child(localid).child("Booking-not-confirmed-info").get().val()
+    if booking is None:
+        counter = 1
+    else:
+        for book in booking:
+            counter += 1
+    database.child("Users").child(localid).child("Booking-not-confirmed-info").child("booking_no_"+str(counter)).set(user_movie_data)
+    return render(request, "userlogin/bookseats.html", {'movie': movie, 'city': city, 'theatre': theatre, 'shows': shows})
+
+
+def confirm_ticket(request):
+    movie_name = request.POST.getlist('book-right')
+    theatre_name = request.POST.getlist('selected-seats')
+    return render(request, "userlogin/confirmbooking.html", {'movie_name': movie_name, 'theatre_name': theatre_name})

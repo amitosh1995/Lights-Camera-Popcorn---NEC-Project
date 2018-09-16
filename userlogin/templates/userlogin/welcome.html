@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" href="{% static 'userlogin/images/icons/favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'userlogin/css/welcomepage.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'userlogin/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'userlogin/vendor/animate/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'userlogin/vendor/css-hamburgers/hamburgers.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'userlogin/vendor/select2/select2.min.css' %}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="{% static 'userlogin/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'userlogin/js/bootstrap.js' %}"></script>
@@ -21,8 +24,11 @@
                 <a href="#">My Shows</a>
             </div>
             <div class="user-info">
-                Hi! {{ e }}
+                Hi! {{ user_name }}
                 <i class="material-icons">person</i>
+                <div class="dropdown-content">
+                    <a href="{% url 'sign_in' %}">Logout</a>
+                </div>
             </div>
         </div>
         <div class="navbar-bot-border">
@@ -68,17 +74,31 @@
             </a>
         </div>
         <p id="book-ticket-text">Book Tickets</p>
-        <form action="/bookseats" method=POST onsubmit="">
+        <form action="bookseats/" method=POST>
+            {% csrf_token %}
             <p id="city-selection-title">Select City</p>
             <div class="city-image">
-                <img src="{% static 'userlogin/images/bangalore.png' %}" alt="Banglore">
-                <img src="{% static 'userlogin/images/Delhi.png' %}" alt="Delhi">
-                <img src="{% static 'userlogin/images/Hyderabad.png' %}" alt="Hyderabad">
-                <img src="{% static 'userlogin/images/Mumbai.png' %}" alt="Mumbai">
+                <input type="radio" name="cities" id="New Delhi" value="Delhi" class="input-hidden" required/>
+                <label for="New Delhi">
+                    <img class="img-responsive" src="{% static 'userlogin/images/Delhi.png' %}"/>
+                </label>
+                <input type="radio" name="cities" id="Mumbai" value="Mumbai" class="input-hidden"/>
+                <label for="Mumbai">
+                    <img class="img-responsive" src="{% static 'userlogin/images/Mumbai.png' %}"/>
+                </label>
+                <input type="radio" name="cities" id="Bangalore" value="Bangalore" class="input-hidden"/>
+                <label for="Bangalore">
+                    <img class="img-responsive" src="{% static 'userlogin/images/bangalore.png' %}"/>
+                </label>
+                <input type="radio" name="cities" id="Hyderabad" value="Hyderabad" class="input-hidden"/>
+                <label for="Hyderabad">
+                    <img class="img-responsive" src="{% static 'userlogin/images/Hyderabad.png' %}"/>
+                </label>
             </div>
             <p id="movie-selection-text">Select Movie</p>
             <div class="movie-list">
                 <select name="movies" required>
+                    <option selected disabled> Choose a movie from the list</option>
                     <option value="The Nun">The Nun</option>
                     <option value="Stree">Stree</option>
                     <option value="Avengers">Avengers</option>
@@ -88,6 +108,7 @@
             <p id="theatre-selection-text">Select Theatre</p>
             <div class="theatre-list">
                 <select name="theatre" required>
+                    <option selected disabled> Choose a theatre from the list</option>
                     <option value="PVR">PVR</option>
                     <option value="DLF">DLF</option>
                     <option value="GIP">GIP</option>
@@ -96,15 +117,21 @@
             </div>
             <p id="show-timing-text">Select a Show-time</p><br>
             <div class="show-time-list">
-                <input type="radio" name="shows" id="show1" value="10:00 a.m. - 1:00 p.m. "> 10:00 a.m. - 1:00
-                p.m. </input>
-                <input type="radio" name="shows" id="show2" value="2:00 p.m - 5:00 p.m."> 2:00 p.m - 5:00 p.m. </input>
-                <input type="radio" name="shows" id="show3" value="6:00 p.m. - 9:00 p.m."> 6:00 p.m. - 9:00
-                p.m. </input>
+                <input type="radio" name="shows" id="show1" value="10:00 a.m. - 1:00 p.m. " required/>
+                <label for="show1">10:00 a.m. - 1:00 p.m.</label>
+                <input type="radio" name="shows" id="show2" value="2:00 p.m - 5:00 p.m."/>
+                <label for="show2">2:00 p.m - 5:00 p.m.</label>
+                <input type="radio" name="shows" id="show3" value="6:00 p.m. - 9:00 p.m."/>
+                <label for="show3">6:00 p.m. - 9:00 p.m. </label>
             </div>
-            <button type="submit" class="btn btn-default">Book Seats</button>
+            <button type="submit" class="btn btn-default" style="border-radius: 30px">Book Seats</button>
         </form>
     </div>
 </div>
+<script src="{% static 'userlogin/vendor/bootstrap/js/popper.js' %}"></script>
+<script src="{% static 'userlogin/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'userlogin/vendor/select2/select2.min.js' %}"></script>
+<script src="{% static 'userlogin/js/main.js' %}"></script>
+
 </body>
 </html>
