@@ -8,5 +8,5 @@ urlpatterns = [
     path('registration/', views.sign_up, name='sign_up'),
     path('registration/post_sign_up/', views.post_sign_up, name='post_Sign_Up'),
     path('home/bookseats/', views.seat_booking, name='seat_selection'),
-    path('home/bookseats/booking_confirm/', views.confirm_ticket, name='confirm_ticket')
+    path('home/booking_confirmation/', views.ticket_confirmation, name='confirm_ticket')
 ]

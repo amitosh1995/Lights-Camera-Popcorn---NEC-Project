@@ -65,31 +65,50 @@ def log_out(request):
 
 
 def seat_booking(request):
-    counter = 1
     city = request.POST.get('cities')
     theatre = request.POST.get('theatre')
     movie = request.POST.get('movies')
     shows = request.POST.get('shows')
-    user_movie_data['movie_name'] = movie
-    user_movie_data['city_name'] = city
-    user_movie_data['theatre_name'] = theatre
-    user_movie_data['show_time'] = shows
+    return render(request, "userlogin/bookseats.html", {'movie': movie, 'city': city, 'theatre': theatre, 'shows': shows})
+
+
+def ticket_confirmation(request):
+    counter = 1
+
+    movie_name = request.GET['movieName']
+    theatre_name = request.GET['theatreName']
+    city_name = request.GET['cityName']
+    show_time = request.GET['showTime']
+    ticket_owner = request.GET['name']
+    no_of_seats = request.GET['no_of_seats']
+    seat_id = request.GET['seat_id']
+    seat_val = request.GET['seat_val']
+
+    user_movie_data['movie_name'] = movie_name
+    user_movie_data['city_name'] = city_name
+    user_movie_data['theatre_name'] = theatre_name
+    user_movie_data['show_time'] = show_time
+    user_movie_data['seat_id'] = seat_id
+    user_movie_data['no_of_seats'] = no_of_seats
+    user_movie_data['ticket_owner'] = ticket_owner
+    user_movie_data['seat_val'] = seat_val
+
+    print(user_movie_data)
+
     idToken = request.session['uid']
     user_data = authe.get_account_info(idToken)
     user = user_data['users']
     user = user[0]
     localid = user['localId']
+
     booking = database.child("Users").child(localid).child("Booking-not-confirmed-info").get().val()
     if booking is None:
         counter = 1
     else:
         for book in booking:
             counter += 1
-    database.child("Users").child(localid).child("Booking-not-confirmed-info").child("booking_no_"+str(counter)).set(user_movie_data)
-    return render(request, "userlogin/bookseats.html", {'movie': movie, 'city': city, 'theatre': theatre, 'shows': shows})
 
+    database.child("Users").child(localid).child("Booking-not-confirmed-info").child("booking_no_" + str(counter)).set(
+        user_movie_data)
 
-def confirm_ticket(request):
-    movie_name = request.POST.getlist('book-right')
-    theatre_name = request.POST.getlist('selected-seats')
-    return render(request, "userlogin/confirmbooking.html", {'movie_name': movie_name, 'theatre_name': theatre_name})
+    return render(request, "userlogin/confirmbooking.html", user_movie_data)
